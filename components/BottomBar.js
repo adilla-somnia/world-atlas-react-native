@@ -8,11 +8,11 @@ export default function BottomBar({ navigation }) {
         position: "absolute",
         bottom: 0,
         width: "100%",
-        backgroundColor: "red",
+        backgroundColor: "#090713",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-evenly",
-        paddingTop: 4,
+        paddingTop: 10,
         paddingBottom: 4,
       }}
     >
@@ -22,10 +22,11 @@ export default function BottomBar({ navigation }) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-around",
-          alignItems: "center",
+          alignItems: "center"
         }}
       >
-        <Icon size={30} source="home" /> <Text>Home</Text>
+        <Icon size={30} source="home" color="white" />
+        <Text style={{color:"white"}}>Home</Text>
       </Pressable>
 
       <Pressable
@@ -37,7 +38,8 @@ export default function BottomBar({ navigation }) {
           alignItems: "center",
         }}
       >
-        <Icon size={30} source="heart" /> <Text>Favorites</Text>
+        <Icon size={30} source="heart" color="white" />
+        <Text style={{color:"white"}}>Favoritos</Text>
       </Pressable>
     </Surface>
   );
